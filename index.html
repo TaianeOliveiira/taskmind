@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskMind</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>TaskMind 🧠</h1>
+
+  <input type="text" id="taskInput" placeholder="Digite uma tarefa">
+  <input type="date" id="taskDate">
+
+  <select id="priority">
+    <option value="baixa">Baixa</option>
+    <option value="media">Média</option>
+    <option value="alta">Alta</option>
+  </select>
+
+  <button onclick="addTask()">Adicionar</button>
+  <button onclick="suggestTask()">Sugestão inteligente</button>
+
+  <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
